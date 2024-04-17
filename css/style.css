@@ -1,26 +1,64 @@
-body, html {
-    height: 100%;
-  }
-  
-  .parallax {
-    /* The image used */
-    background-image: url("/img/red-dead.png");
-  
-    /* Full height */
-    height: 100%;
-    
-  
-    /* Create the parallax scrolling effect */ 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .parallax p {
-    margin: 0 auto;
-    text-align: center;
-    padding: 500px;
-    font-size: 100px;
-    color: white;
-  }
+html {
+  height: 500vh;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  width: 100%;
+  padding: 60px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header ul li {
+  margin: 0 40px;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  background-color: #FE775A;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.banner {
+  height: 100vh;
+  background-image: url(../img/red-dead.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
