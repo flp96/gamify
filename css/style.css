@@ -26,6 +26,16 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  transition: .5s;
+}
+
+header.rolagem {
+  background-color: #fff;
+  padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i {
+  color: #FE775A;
 }
 
 header ul {
