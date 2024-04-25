@@ -95,19 +95,35 @@ header ul li a {
   display: grid;
   grid-template-columns: 100px 1fr 300px;
   grid-template-areas: 
-  "sidebar content anuncios"
-  "sidebar content anuncios"
+  "sidenav content anuncios"
+  "sidenav content anuncios"
   "footer footer footer"
 }
 
 /* Sidebar */
 
-.sidebar {
-  grid-area: sidebar;
+.sidenav {
+  grid-area: sidenav;
+  padding: 30px;
 }
 
-.sidebar li img{
+.sidenav li {
+  list-style: none;
+}
+
+.sidenav li img{
+  display: block;
+  min-width: 60px;
   max-width: 200px;
+  margin: 0 auto 30px auto;
+  background: #DC141E;
+  border-radius: 5px; 
+  box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+  transition: .1s ease-out;
+}
+
+.sidenav li a:hover {
+  cursor: pointer;
 }
 
 .content {
